@@ -104,7 +104,7 @@
 
   * 그러나 원본 Dataset의 Distribution을 학습하거나, 이를 이용해서 Data를 생성하는것은 아님! 이는 VAE가 사용하는 확률론적 접근방법
   
-    * GAN : 데이터를 생성하였더니 Distribution이 sample dataset과 같음
+    * GAN : Noise Distribution에서 Data Distribution을 뽑아내는 학습
    
     * VAE : Sample dataset의 Distribution을 사용해 데이터를 생성
    
