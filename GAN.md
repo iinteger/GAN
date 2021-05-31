@@ -100,7 +100,14 @@
 
   
 
-  * G를 최적화하는것은 JSD(Pdata||Pg)를 최소화시키는것과 같음. 따라서 Generator가 최적화되었을 때, 생성된 데이터의 분포는 실제 데이터의 분포와 동일하게 됨. 이는 GAN이 주어진 dataset의 distribution를 알아내는 작업이라는 것을 의미
+  * G를 최적화하는것은 JSD(Pdata||Pg)를 최소화시키는것과 같음. 따라서 Generator가 최적화되었을 때, 생성된 데이터의 분포는 실제 데이터의 분포와 동일하게 됨
+
+  * 그러나 원본 Dataset의 Distribution을 학습하거나, 이를 이용해서 Data를 생성하는것은 아님! 이는 VAE가 사용하는 확률론적 접근방법
+  
+    * GAN : 데이터를 생성하였더니 Distribution이 sample dataset과 같음
+   
+    * VAE : Sample dataset의 Distribution을 사용해 데이터를 생성
+   
 
     
 
