@@ -5,7 +5,7 @@
   * 기존의 생성모델은 Markov-Chain이나 Variational Encoder와 같이 통계와 수학을 기반으로 하는 모델들인데, 발전을 거듭함에도 성능이 좋지 못했음
 
   * 2014년, Ian Goodfellow가 기존 방법론에서 벗어나, 두개의 Neural Network가 서로 경쟁하며 발전하는 방법을 제안함
-
+<br/>
     
 
 * #### Adversarial Training
@@ -33,7 +33,7 @@
   * Generator가 학습을 거치며 Pg = Pdata로 수렴하게 되면 D가 두 분포를 구분하지 못하게 되어 D(x) = 0.5 에 수렴 (global optimum)
     
     * latent vector z도 실제 데이터와는 무관한 곳에 mapping되다가, G의 학습이 끝나면 real data distribution을 잘 표현할 수 있는 x로 mapping 
-
+<br/>
   
 
   
@@ -59,7 +59,7 @@
       <p align="center"><img src="images/gan7.png" /></p>
 
     * 변형된 식은 0에서 높은 급격한 기울기를 가지고 있기 때문에 학습이 빠르게 진행됨
-
+<br/>
       
 
   * **Discriminator**는 위와 반대로 log D(x)를 1로, D(G(z))를 0으로 만들어야 하기 때문에 위 식을 maximize 하는 방향으로 학습
@@ -107,7 +107,7 @@
     * GAN : Noise Distribution에서 Data Distribution을 뽑아내는 학습
    
     * VAE : Sample dataset의 Distribution을 사용해 데이터를 생성
-   
+<br/>
 
     
 
